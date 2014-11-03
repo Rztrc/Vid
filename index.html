@@ -1,0 +1,498 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Iñigo Vidondo | Web Oficial</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+ <!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta charset="UTF-8" name="Iñigo Vidondo" content="Pagina web oficial de Iñigo Vidondo, patinador profesional.">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!----webfonts---->
+<link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!----//webfonts---->
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+<!----//End-top-nav-script---->
+</head>
+<body>
+		<!-----start-container---->
+			<!----- start-header---->
+			<div id="home" class="header">
+				<div class="container">
+					<!--<div class="logo">
+						<a href="#"><img src="images/logo.png" title="logo" /></a>
+					</div>---->
+					<!----start-top-nav---->
+					 <nav class="top-nav">
+						<ul class="top-nav">
+							<li class="active"><a href="#home" class="scroll">Inicio</a></li>
+							<li class="page-scroll"><a href="#features" class="scroll">Biografía</a></li>
+							<li class="page-scroll"><a href="#team" class="scroll">Palmarés</a></li>
+							<li class="page-scroll"><a href="#gallery" class="scroll">Galería</a></li>
+							<li class="page-scroll"><a href="#enlaces" class="scroll">Enlaces</a></li>
+							<li class="page-scroll"><a href="#pricing" class="scroll">Donativos</a></li>
+							<li class="page-scroll"><a href="#partner" class="scroll">Patrocinadores</a></li>
+							<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contacto</a></li>
+						</ul>
+						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+					</nav>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="fotos/sesion/inicio2.jpg" alt="">
+			          <div class="caption">
+			          	<div class="slide-text-info">
+			          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			<!----- //End-slider---->
+			<!-----start-fearures---->
+			<div class="features" id="features">
+				<div class="container">
+					<div class="features-head text-center">
+						<h2>Biografía</h2>
+					</div>
+					<div class="feature-grids">
+						<center><div class="prueba feature-grid">
+							<center><h3>Datos personales</h3></center>
+							<p>Fecha de nacimiento: 23/04/1989</p>
+							<p>Ciudad de nacimiento: Vitoria-Gasteiz</p>
+							<p>Altura: 1,80m</p>
+							<p>Peso: 76kg</p>
+							<p>Disciplinas: Larga distancia</p>
+						</div><br><br>
+						<center><div class="prueba feature-grid justificado">
+							<center><h3>Presentación</h3></center><br>
+							<p>Mi nombre es Iñigo Vidondo Fernández de Larrinoa. Soy un joven deportista de Vitoria-Gasteiz que realiza patinaje de velocidad.</p><br>
+
+							<p>Con el fin de poder realizar un cambio en mi trayectoria deportiva he estado practicando los dos últimos años patinaje de velocidad sobre hielo en las ciudades Alemanas de Inzell y en la Italiana de Baselga di Pine dada la imposibilidad de practicar esta disciplina en territorio español.</p><br>
+
+							<p>En la actualidad el único patinador vasco y español que practica esta disciplina deportiva. Sin apenas ayudas hasta el momento, ni técnicas ni económicas, los resultados obtenidos han sido muy satisfactorios y se aprecia una gran mejoría en los apenas 5 meses de entrenamiento que llevo acumulados entre ambas temporadas. De hecho tanto desde el Centro de Alto Rendimiento de Inzell (Kia  Speed Skating Academy), el mejor centro de alto rendimiento que existe para el perfeccionamiento de esta disciplina, como desde la concentración Italiana en Baselga di Pine se han puesto en contacto conmigo para sondear mi posible estancia la temporada venidera.</p><br>
+
+							<p>El deporte de patinaje de velocidad sobre hielo tiene un gran seguimiento popular en países del centro y norte de Europa así como en Norte América y Asia, donde además dispone de un gran seguimiento por parte de los medios de comunicación, tal y como se ha podido comprobar en los recientes Juegos Oímpicos de Invierno disputados en la ciudad rusa de Sochi. La repercusión mediática que pudiera haber en España aumentaría al haber un patinador español en competición tal y como ha sucedido con otros deportes olímpicos invernales, léase el caso de Ander Mirambell en skeleton, Victoria Padial en biatlón  o Javier Fernández en patinaje artístico y que en los últimos meses disponen de bastante protagonismo en los distintos medios de comunicación, visuales y escritos tanto dentro como más allá de nuestras fronteras.</p><br>
+
+							<p>Sé que para muchos es difícil entender la aventura en la que me he embarcado y que consideran que soy excesivamente ambicioso. Pero sin pretender pecar de soberbio hemos necesitado de muchos aventureros para hacer llegar el deporte hasta las cotas de reconocimiento en la que se encuentra en estos momentos y a mí me gustaría poder poner todo mi empeño para progresar en una disciplina tan espectacular como el patinaje de velocidad sobre hielo y a la par ponerla en boca de muchos de nosotros.</p><br>					
+						</div>
+						
+					</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-----//End-fearures---->
+			<!-----start-team---->
+			<div class="team" id="team">
+				<div class="container">
+					<div class="team-head text-center">
+						<h3>PALMARÉS</h3>
+						<span> </span>
+					</div>
+					<div class="team-grids">
+						<div class="col-md-3 team-grid">							
+						  	<div class="t-member-info">
+						  		<h3>Campeonato de España</h3>
+								<ul>
+									<li>Del 2004 al 2013</li>
+										<ul>
+											<li>15 títulos de campeón de España</li>
+											<li>9 títulos de subcampeón de España</li>
+											<li>6 títulos de 3&deg; de España</li>
+										</ul>
+								</ul><br>
+						  	</div>
+						</div>
+						<div class="col-md-3 team-grid">
+						  	<div class="t-member-info">
+						  		<h3>Campeonato de Europa</h3>
+						<ul>
+							<li>2013</li>
+							<ul>
+								<li>3&deg; en el 5000m relevos a la americana</li>
+								<li>9&deg; en Maratón</li>
+							</ul>
+							<li>2011</li>
+							<ul>
+								<li>3&deg; en el 5000m relevos a la americana</li>
+								<li>8&deg; en Maratón</li>
+							</ul>
+							<li>2010</li>
+							<ul>
+								<li>5&deg;en el relevos a la americana.</li>
+								<li>10&deg; en el 1500m puntos eliminación</li>
+								<li>12&deg; en Maratón.</li>
+							</ul>
+						</ul><br>
+						  	</div>
+						</div>
+						<div class="col-md-3 team-grid">							
+						  	<div class="t-member-info">
+						  		<h3>Campeonato del mundo</h3>
+								<ul>
+									<li>2011</li>
+									<ul>
+										<li>5&deg; en relevos a la americana por equipos</li>
+										<li>8&deg; en 15000m eliminación circuito</li>
+										<li>11&deg; en 10000m puntuación circuito</li>
+										<li>11&deg; en 10000m sprint pista</li>
+									</ul>
+									<li>2008</li>
+									<ul>
+										<li>11&deg; en Maratón</li>
+									</ul>
+								</ul><br>
+								<h3>Copa mundial WIC</h3>
+								<ul>
+									<li>2010</li>
+									<ul>
+										<li>3&deg; clasificado en el copa mundial de maratones</li>
+									</ul>
+								</ul>
+						  	</div>
+						</div>
+						<div class="col-md-3 team-grid">
+							<div class="t-member-info">
+						  		<h3>Patinaje sobre hielo</h3>
+						<ul>
+							<li>2014</li>
+							<ul>
+								<li>Inzell(15-16 de Febrero de 2014)</li>
+								<ul>
+									<li>8&deg; en el 1.500 con 1:55.51. <p style="color:red">  Nuevo Récord de España</p></li>
+									<li>15&deg; en el 500 con 39.57s  . <p style="color:red"> Nuevo Récord de España</p></li>
+									<li>8&deg; en el 5.000 con 7:02.91. Nueva Plusmarca personal.</li>
+									<li>6&deg; en el 500 con 39.32s. <p style="color:red">Nuevo Récord de España</p></li>
+								</ul>
+								<li>Baseldadi pine(8-9 de Febrero de 2014):</li>
+								<ul>
+									<li>7&deg; en el 500m con 40.43s</li>
+									<li>2&deg; en el 5000m con 7:45.06</li>
+									<li>3&deg; en el 500m con 40.64s</li>
+									<li>4&deg; en 1500m con 2:06.02</li>
+								</ul>
+								<li>Otros:</li>
+								<ul>
+									<li><p style="color:red">Récord de España de 1500m con 1.53.68</p></li>	
+									<li><p style="color:red">Récord de España de 3000m con 4.05.95</p></li>	
+								</ul>
+							</ul>							
+						</ul><br>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-----//End-team---->
+			<!-----start-gallery---->
+			<div class="gallery" id="gallery">
+				<div class="container">
+					<div class="gallery-head text-center">
+						<h3>Galería</h3><span> </span>						
+					</div>
+					<div class="gallery-grids">
+						<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+						<div class="col-md-3 gallery-grid grid cs-style-2" >
+							<figure>
+								<a href="fotos/hielo/f1.jpg"><img src="fotos/hielo/f1.jpg" alt="img02" ></a>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/hielo/f2.jpg"><img src="fotos/hielo/f2.jpg" alt="img02"></a>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/hielo/f3.jpg"><img src="fotos/hielo/f3.jpg" alt="img02"></a>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/hielo/f4.jpg"><img src="fotos/hielo/f4.jpg" alt="img02"></a>
+							</figure>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="gallery-grids">
+					<link rel="stylesheet" type="text/css" href="css/component.css" />
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/ruedas/f1.jpg"><img src="fotos/ruedas/f1.jpg" alt="img02"></a>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/ruedas/f2.jpg"><img src="fotos/ruedas/f2.jpg" alt="img02"></a>
+								<figcaption>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/ruedas/f3.jpg"><img src="fotos/ruedas/f3.jpg" alt="img02"></a>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/ruedas/f4.jpg"><img src="fotos/ruedas/f4.jpg" alt="img02"></a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="gallery-grids">
+					<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+						<div class="col-md-3 gallery-grid grid cs-style-2" >
+							<figure>
+								<a href="fotos/hielo/f6.jpg"><img src="fotos/hielo/f6.jpg" alt="img02"></a>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/hielo/f7.jpg"><img src="fotos/hielo/f7.jpg" alt="img02"></a>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/hielo/f8.jpg"><img src="fotos/hielo/f8.jpg" alt="img02"></a>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/hielo/f9.jpg"><img src="fotos/hielo/f9.jpg" alt="img02"></a>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2" >
+							<figure>
+								<a href="fotos/sesion/f5.jpg"><img src="fotos/sesion/f5.jpg" alt="img02" ></a>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/sesion/f6.jpg"><img src="fotos/sesion/f6.jpg" alt="img02"></a>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/sesion/f7.jpg"><img src="fotos/sesion/f7.jpg" alt="img02"></a>
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<a href="fotos/sesion/f8.jpg"><img src="fotos/sesion/f8.jpg" alt="img02"></a>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-----//End-gallery---->
+			<!-----start-pricing-plans---->
+			<div class="team" id="enlaces">
+				<div class="team-head text-center">
+						<h3>ENLACES</h3>
+						<span> </span>
+				</div><br>
+				<center><div>
+					<center><ul>
+						<li><a href="http://www.fedhielo.com/index.php/noticias10/1722-el-patinador-de-velocidad-inigo-vidondo-a-por-la-minima-para-la-copa-del-mundo"  target="_blank"> El patinador de velocidad Iñigo Vidondo, a por la mínima para la Copa del Mundo I</a></li>
+						<li><a href="http://www.coe.es/WEB/Noticias.nsf/2012NoticiasPOREventosWebFEDERATODOS/013F4870707FFB23C1257C700030D18F?opendocument"  target="_blank"> El patinador de velocidad Iñigo Vidondo, a por la mínima para la Copa del Mundo II</a></li>
+						<li><a href="http://www.federadosconeldeporte.com/inigo-vidondo-bate-en-inzell-los-records-de-espana-de-500-y-1-500m/"  target="_blank"> Iñigo Vidondo bate en Inzell los récords de España de 500 y 1.500m</a></li>
+						<li><a href="http://www.gasteizhoy.com/inigo-vidondo-record-de-espana/"  target="_blank"> El patinador alavés Iñigo Vidondo bate dos récords de España </a></li>
+						<li><a href="http://www.sumendi.com/index.php/noticias/noticias-del-club/95-inigo-vidondo-brilla-en-el-gran-prix-long-track-de-italia"  target="_blank">Iñigo Vidondo brilla en el Grand Prix Long-Track de Italia </a></li>
+						<li><a href="http://www.alondres2012.com/2014/02/inigo-vidondo-un-valiente-en-el-mundo-del-patinaje-de-velocidad-sobre-hielo.html"  target="_blank">Iñigo Vidondo , un valiente en el mundo del Patinaje de Velocidad sobre hielo</a></li>
+						<li><a href="http://www.avancedeportivo.es/ad/inigo-vidondo-bate-dos-records-de-espana/"  target="_blank">Iñigo Vidondo bate 2 récords de España en patinaje de velocidad </a></li>
+						<li><a href="http://www.marca.com/2014/02/21/mas_deportes/jjoo_invierno/1393004403.html?a=e81ebb7a12b3902263e1e2ccd7fef8ee&t=1403867640"  target="_blank">Mención en el diario Marca </a></li>
+						<li><a href="http://www.alondres2012.com/2014/03/inigo-vidondo-camino-de-la-copa-del-mundo-de-patinaje-2014-2015.html"  target="_blank">Iñigo Vidondo camino de la Copa del Mundo de Patinaje de Velocidad 2014-2015 </a></li>
+						<li><a href="http://www.noticiasdealava.com/2014/03/22/deportes/otros-deportes/vidondo-cerca-de-la-copa-del-mundo"  target="_blank">Vidondo, cerca de la Copa del Mundo </a></li>
+						<li><a href="http://www.noticiasdealava.com/2014/10/15/deportes/otros-deportes/inigo-vidondo-bate-un-nuevo-record"  target="_blank">Iñigo Vidondo bate un nuevo récord </a></li>
+						<li><a href="http://www.gasteizhoy.com/inigo-vidondo-bate-el-record-de-espana-en-3-000-metros-sobre-hielo/"  target="_blank">Iñigo Vidondo bate el récord de España en 3.000 metros sobre hielo </a></li>
+						<li><a href="http://www.fedhielo.com/index.php/noticias10/1862-inigo-vidondo-bate-el-record-de-espana-de-3-000m-de-patinaje-de-velocidad"  target="_blank">Iñigo Vidondo bate el récord de España de 3.000m de patinaje de velocidad </a></li>
+					</ul></center>
+				</div></center>
+			</div>
+			<div class="pricing-plans" id="pricing">
+				<div class="container">
+					<div class="pricing-plans-head text-center">
+						<h3>DONACIONES</h3><span> </span>
+					</div><br><br>
+					<center><div class="prueba feature-grid2 justificado">
+						<p>Después de muchos esfuerzos por mi parte y gracias a la colaboración entre la Federación Española de Deportes de Hielo (FEDH) y la Federación Internacional de Patinaje (ISU) quiero informaros que ya me encuentro en la prestigiosa Academia Kia Speed de Inzell donde desde hace unas semanas estoy trabajando duro para conseguir mi gran sueño, participar en los próximos Juegos Olímpicos de Invierno.</p>
+						<br>
+						<p>Esta temporada se presenta llena de emocionantes e interesantes desafíos, pero como imaginareis llegar hasta aquí no es el objetivo, sino un paso más en el camino hacia mi meta. Una vez conseguida la posibilidad de entrenar y aprender con los mejores, el siguiente paso debe consistir en mejorar mis marcas, seguir rebajando las plusmarcas nacionales y estar cada día un poco más cerca de mis rivales.</p>
+						<br>
+						<p>En el marco de la negociación con la Federación Internacional se llegó a un principio de acuerdo por el que podré participar en pruebas de la Copa del Mundo de la presente temporada representando al equipo nacional, con todo lo que ello supone. Pero para que mi participación pueda seguir adelante os pido desde estas líneas vuestro patrocinio para tener la posibilidad de medirme de tú a tú con los mejores en el mayor número de ocasiones posibles.</p>
+						<br>
+						<p>Toda aquella empresa o particular que decida apostar por mi aventura y me esponsorice tendrá como contraprestación un espacio específico en la ropa de entrenamiento y competición con la que participe en las pruebas en las que compita durante la presente temporada así como en otro tipo de promociones y artículos periodísticos. Con vuestra ayuda espero que la presente temporada sea una temporada para el recuerdo.</p>
+						<br>
+						<p>Muchas gracias. Iñigo Vidondo Fernández de Larrinoa.</p>
+
+
+					</div><center>
+					<center><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+						">
+						<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+						<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+					</form></center>
+
+
+				</div>
+			</div>
+			<!-----//End-pricing-plans---->
+		<!-----//End-container---->
+	        <div class="gallery" id="partner">
+				<div class="container">
+					<div class="gallery-head text-center">
+					  <h3>Patrocinadores</h3><span> </span>
+					</div>
+					<ul id="flexiselDemo3">
+						<li><img src="images/catlike.jpg" /></li>
+						<li><img src="images/ve.png" /></li>
+						<li><img src="images/subsports.jpg" /></li>
+						<li><img src="images/bat.png" /></li>
+					</ul>
+	<script type="text/javascript">
+$(window).load(function() {
+	$("#flexiselDemo3").flexisel({
+		visibleItems: 5,
+		animationSpeed: 1000,
+		autoPlay: true,
+		autoPlaySpeed: 3000,    		
+		pauseOnHover: true,
+		enableResponsiveBreakpoints: true,
+    	responsiveBreakpoints: { 
+    		portrait: { 
+    			changePoint:480,
+    			visibleItems: 1
+    		}, 
+    		landscape: { 
+    			changePoint:640,
+    			visibleItems: 2
+    		},
+    		tablet: { 
+    			changePoint:768,
+    			visibleItems: 3
+    		}
+    	}
+    });
+    
+});
+</script>
+<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+</div>
+</div>
+  <div class="footer">
+  	<div class="container">
+	   <div class="footer-top">
+		    
+		 	
+			   
+				 <a href="https://es-es.facebook.com/pages/I%C3%B1igo-Vidondo/314613448591100" target="blank"> <img src="images/facebook.png"></img> </a>
+				 <a href="https://twitter.com/vaironi" target="blank"><img src="images/twitter.png"></img> </a>
+				 <a href="http://instagram.com/ividondo" target="blank"><img src="images/instagram.png"></img> </a>
+				 <div class="clear"> </div>
+			  
+			
+			<div class="clearfix"> </div>
+		</div>
+		<div class="footer-bottom" id="contact">
+		  <div class="container contact">
+      	  	 <div class="col-md-4 contact-top_left">
+			  <h3>Información de contacto</h3>
+			  <ul class="contact_info">
+			  	<li><i class="message"> </i><span class="msg">vaironi@hotmail.com</span></li>
+			  </ul>
+	 		 </div>
+      		 
+            </div>
+      	    <center><div class="copy">
+		       <p> 2014 Página realizada por Daniel Cortázar</a></p>
+		    </div></center>
+          </div>
+          <script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+			  			containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+			 		};
+					*/
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+		    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;">top </span></a>
+			</div>
+		</div>
+		<!----//End-footer---->
+		<!----//End-container---->  
+</body>
+</html>
+
